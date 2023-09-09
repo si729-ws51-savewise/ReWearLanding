@@ -129,3 +129,72 @@
 			</div>
 		</div>
 	 </section>        
+     <section class="contact-us" id="Contacto">
+        <h1>Contacto</h1>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-home"></i>
+                    <span>
+                        <h5>Mal. Balta 626, Miraflores</h5>
+                        <p>Lima, Peru</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+51 987 654 321</h5>
+                        <p>Lunes a viernes</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>contacto@savewise.com</h5>
+                        <p>Envíanos un correo</p>
+                    </span>
+                </div>
+            </div>
+     <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Ingresa tu nombre" required> 
+                <input type="email" placeholder="Ingresa tu correo" required> 
+                <input type="text" placeholder="Ingresa tu Mensaje" required> 
+                <textarea rows="6" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btnEnviar">Enviar</button>
+            </form>
+     </div>
+        </div>
+     </section>
+     <!--INICIO FOOTER-->
+     
+     <section class="footer">
+        <div class="social-icons-container">
+            <a href="" class="ri-twitter-fill"></a>
+            <a href="" class="ri-facebook-box-fill"></a>
+            <a href="" class="ri-instagram-fill"></a>
+            <a href="" class="ri-tiktok-fill"></a>
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Ayuda/FAQ</li>
+            <li class="menu-item">Terminos de Uso</li>
+            <li class="menu-item">Politica de Privacidad</li>
+        </ul>
+        <span class="copyright">&copy;2023, SaveWise. Todo los derechos reservados</span>
+     </footer>
+    <!---JS TOGGLE MENU--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function MostrarMenu(){
+            navLinks.style.right = "0";/*Se muestra en pantalla, en style.css en linea 123 se oculta con -200px*/
+        }
+        function EsconderMenu(){
+            navLinks.style.right = "-200px"/*Se despliega fuera de la pantalla, invisible para el usuario*/;
+        }
+    </script>
+
+
+</body>
+</html>
