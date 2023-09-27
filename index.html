@@ -185,9 +185,9 @@
             <div>
                 <i class="fa-solid fa-envelope"></i>
                 <span>
-                        <h5>contact@savewise.com</h5>
-                        <p>Send us an email</p>
-                    </span>
+                    <h5>contact@savewise.com</h5>
+                    <p>Send us an email</p>
+                </span>
             </div>
         </div>
         <div class="contact-col">
@@ -216,3 +216,17 @@
     </ul>
     <span class="copyright">&copy;2023, SaveWise. All rights reserved</span>
 </footer>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function MostrarMenu(){
+        navLinks.style.right = "0";/*Se muestra en pantalla, en style.css en linea 123 se oculta con -200px*/
+    }
+    function EsconderMenu(){
+        navLinks.style.right = "-200px"/*Se despliega fuera de la pantalla, invisible para el usuario*/;
+    }
+</script>
+
+
+</body>
+</html>
