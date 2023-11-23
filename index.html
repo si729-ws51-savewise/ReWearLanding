@@ -10,28 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8f077baeb1.js" crossorigin="anonymous"></script>
-    <!--Remixicon para iconos-->
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
 <section class="header"  id="home-rewear">
-    <nav>
-        <div class="logo-header">
-            <a href="index.html">ReWear</a>
-        </div>
-        <div class="nav-links" id="navLinks">
-            <i class="fa-solid fa-xmark" onclick="EsconderMenu()"></i>
-            <ul>
-                <li><a href="#Compradores">Shoppers</a></li>
-                <li><a href="#Vendedores">Retailers</a></li>
-                <li><a href="#Comentarios">Comments</a></li>
-                <li><a href="#Contacto">Contact us</a></li>
-            </ul>
-        </div>
-        <i class="fa-solid fa-bars" onclick="MostrarMenu()"></i>
-    </nav>
+  <nav>
+    <div class="logo-header">
+      <a href="index.html">ReWear</a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+      <ul>
+        <li><a href="#Buyers">Shoppers</a></li>
+        <li><a href="#Sellers">Retailers</a></li>
+        <li><a href="#Comments">Comments</a></li>
+        <li><a href="#MeetUs">Meet us</a></li>
+        <li><a href="#Contact">Contact us</a></li>
+      </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+  </nav>
 
-    <div class="text-box">
+
+  <div class="text-box">
         <h1>Welcome to <span class="ReWearUni">ReWear</span></h1>
         <p>The best web application for buying clothes at garage sales <br> <br> Dress your way, impose your fashion.</p>
         <h2>Access <span class="ReWearUni">Now!</span> </h2>
@@ -40,12 +42,12 @@
     </div>
 </section>
 
-<a href="#home-rewear" class="boton-inicio">⬆</a>
+<a href="#home-rewear" class="start-btn">⬆</a>
 
-<section class="about" id="Compradores">
+<section class="about" id="Buyers">
     <h1>Shoppers</h1>
     <div class="main">
-        <img src="./images/comprador.png" alt="compradores">
+        <img src="images/Buyer.png" alt="Buyers">
         <div class="content">
             <p class="text">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -72,7 +74,7 @@
     </div>
 </section>
 
-<section class="about" id="Vendedores">
+<section class="about" id="Sellers">
     <h1>Retailers</h1>
     <div class="main">
         <div class="content">
@@ -98,11 +100,11 @@
             </p>
              <a href="https://rewear-38461.web.app/retailers" target="_blank"><button class="segment-button">Shop now!</button></a>
         </div>
-        <img src="./images/vendedor.png" alt="vendedores">
+        <img src="images/Seller.png" alt="sellers">
     </div>
 </section>
 
-<section class="review" id="Comentarios">
+<section class="review" id="Comments">
     <h1 class="heading">Comments</h1>
     <div class="box-container">
         <div class="box">
@@ -115,7 +117,7 @@
             </div>
             <p>I give it 5 stars, it helps me to organize my orders and keep track of my sales in a very simple way.</p>
             <div class="user">
-                <img src="images/persona-uno.jpg" alt="profile">
+                <img src="images/review-images/Mary-Gray.jpg" alt="first profile">
                 <div class="user-info">
                     <h3>Mary Gray</h3>
                     <span>Retailer </span>
@@ -134,7 +136,7 @@
             </div>
             <p>I recommend it, I can buy different clothes from the comfort of my home. The brands and styles are varied.</p>
             <div class="user">
-                <img src="images/persona-tres.jpg" alt="profile">
+                <img src="images/review-images/Jhon-Brown.jpg" alt="second profile">
                 <div class="user-info">
                     <h3>John Brown</h3>
                     <span>Shopper</span>
@@ -153,7 +155,7 @@
             </div>
             <p>Thanks to this web application,  I have been able to contact  more clients, I organize events and the clients show a lot of interest.</p>
             <div class="user">
-                <img src="images/persona-dos.jpeg" alt="profile">
+                <img src="images/review-images/Mike-Jhonson.jpeg" alt="third profile">
                 <div class="user-info">
                     <h3>Mike Johnson</h3>
                     <span>Retailer</span>
@@ -163,8 +165,21 @@
         </div>
     </div>
 </section>
-
-<section class="contact-us" id="Contacto">
+<section class="meet-us" id="MeetUs">
+  <h1>Meet us</h1>
+  <p>Next, we will show you videos so you can learn more about the team and the product.</p>
+  <div class="row">
+    <div class="video-col">
+      <h2 style="margin-bottom: 10px;">About the product</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LZRO5nPhfnE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-col">
+      <h2 style="margin-bottom: 10px;">About the team</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4Vq1LxGR6vc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+<section class="contact-us" id="Contact">
     <h1>Contact us</h1>
     <div class="row">
         <div class="contact-col">
@@ -196,7 +211,7 @@
                 <input type="email" placeholder="Email" required>
                 <input type="tel" placeholder="Phone" required>
                 <textarea rows="6" placeholder="Message" required></textarea>
-                <button type="submit" class="btnEnviar">Send</button>
+                <button type="submit" class="btnSend">Send</button>
             </form>
         </div>
     </div>
@@ -217,14 +232,18 @@
     <span class="copyright">&copy;2023, SaveWise. All rights reserved</span>
 </footer>
 <script>
-    var navLinks = document.getElementById("navLinks");
+  var navLinks = document.getElementById("navLinks");
+  var menuVisible = false;
 
-    function MostrarMenu(){
-        navLinks.style.right = "0";/*Se muestra en pantalla, en style.css en linea 123 se oculta con -200px*/
+  function toggleMenu() {
+    menuVisible = !menuVisible;
+
+    if (menuVisible) {
+      navLinks.style.right = "0";
+    } else {
+      navLinks.style.right = "-200px";
     }
-    function EsconderMenu(){
-        navLinks.style.right = "-200px"/*Se despliega fuera de la pantalla, invisible para el usuario*/;
-    }
+  }
 </script>
 
 
