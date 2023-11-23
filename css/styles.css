@@ -556,3 +556,7 @@ h3{
   color: var(--primary-100);
   text-align: center;
 }
+.video-col{
+  margin-left: 20px;
+  margin-right: 20px;
+}
