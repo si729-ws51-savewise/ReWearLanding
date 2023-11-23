@@ -31,7 +31,7 @@
     color:var(--primary-100);
 }
 
-.boton-inicio {
+.start-btn {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -478,7 +478,7 @@ h3{
     box-sizing: border-box;
 }
 
-.btnEnviar{
+.btnSend{
     position: relative;
     padding: 10px 22px;
     background: var(--accent-200);
@@ -549,4 +549,10 @@ h3{
     color: black;
     opacity: 0.8;
     text-align: center;
+}
+.meet-us{
+  padding-top: 60px;
+  padding-bottom: 25px;
+  color: var(--primary-100);
+  text-align: center;
 }
